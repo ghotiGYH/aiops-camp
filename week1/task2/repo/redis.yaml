@@ -21,7 +21,7 @@ spec:
     chargeType: "POSTPAID"
     name: "crossplane-redis"
     TypeId: "15"
-    memSize: "256"
+    memSize: 256
     passwordSecretRef:
       key: redis-secret
       name: password
