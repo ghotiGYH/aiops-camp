@@ -20,7 +20,7 @@ spec:
   forProvider:
     chargeType: "POSTPAID"
     name: "test-redis"
-    TypeId: "15"
+    TypeId: 15
     memSize: 256
     availabilityZone: "ap-hongkong-2"
     passwordSecretRef:
