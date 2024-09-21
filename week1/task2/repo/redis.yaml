@@ -22,6 +22,7 @@ spec:
     name: "crossplane-redis"
     TypeId: "15"
     memSize: 256
+    availabilityZone: "ap-hongkong-2"
     passwordSecretRef:
       key: redis-secret
       name: password
