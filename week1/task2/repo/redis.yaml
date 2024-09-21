@@ -7,7 +7,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: redis-secret
-  # namespace: redis
+  namespace: default
 data:
   password: "cGFzc3dvcmQ="
 ---
