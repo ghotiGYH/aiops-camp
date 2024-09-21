@@ -23,6 +23,8 @@ spec:
     typeId: 17
     memSize: 256
     availabilityZone: "ap-hongkong-2"
+    vpcId: "test-redis-vpc"
+    subnetId: "test-redis-subnet"
     passwordSecretRef:
       key: password
       name: redis-secret
