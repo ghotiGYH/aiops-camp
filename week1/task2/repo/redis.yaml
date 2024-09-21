@@ -9,7 +9,7 @@ metadata:
   name: redis-secret
   namespace: redis
 data:
-  password: "cGFzc3dvcmQ="
+  password: "cGFzc3dvcmQ0=_"
 ---
 apiVersion: redis.tencentcloud.crossplane.io/v1alpha1
 kind: Instance
