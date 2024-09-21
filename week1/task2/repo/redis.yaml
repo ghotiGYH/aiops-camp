@@ -26,5 +26,8 @@ spec:
     passwordSecretRef:
       key: redis-secret
       name: password
-      namespace: redis
+      namespace: default
+  providerConfigRef:
+    name: default
+    namespace: crossplane-system
      
