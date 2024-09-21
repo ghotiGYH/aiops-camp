@@ -1,13 +1,13 @@
-# apiVersion: v1
-# kind: Namespace
-# metadata:
-#   name: redis
-# ---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: redis
+---
 apiVersion: v1
 kind: Secret
 metadata:
   name: redis-secret
-  namespace: default
+  namespace: redis
 data:
   password: "cGFzc3dvcmQ="
 ---
@@ -15,7 +15,7 @@ apiVersion: redis.tencentcloud.crossplane.io/v1alpha1
 kind: Instance
 metadata:
   name: test-redis
-  # namespace: redis
+  namespace: redis
 spec:
   forProvider:
     chargeType: "POSTPAID"
@@ -26,8 +26,6 @@ spec:
     passwordSecretRef:
       key: redis-secret
       name: password
-      namespace: default
+      namespace: redis
   providerConfigRef:
     name: default
-    namespace: crossplane-system
-     

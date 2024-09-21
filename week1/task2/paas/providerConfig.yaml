@@ -8,5 +8,5 @@ spec:
     secretRef:
       key: credentials
       name: crossplane-creds
-      namespace: crossplane
+      namespace: crossplane-system
     source: Secret
